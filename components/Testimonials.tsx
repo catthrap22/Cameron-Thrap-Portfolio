@@ -1,48 +1,12 @@
 "use client"
-
-import { useEffect } from "react"
+import {testimonials} from "@/data";
 import {
     Carousel,
     CarouselContent,
     CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
 } from "@/components/ui/carousel"
 import AutoScroll from "embla-carousel-auto-scroll"
 
-const testimonials = [
-    {
-        quote: "Wonderful working with Cameron on this project. We always appreciate your quick turnarounds and professionalism. Thank you so much for all your hard work!!",
-        name: "Esther Aragon",
-        title: "Senior Client Project Manager"
-    },
-    {
-        quote: "Wonderful working with Cameron on this project. We always appreciate your quick turnarounds and professionalism. Thank you so much for all your hard work!!",
-        name: "Esther Aragon",
-        title: "Senior Client Project Manager"
-    },
-    {
-        quote: "Wonderful working with Cameron on this project. We always appreciate your quick turnarounds and professionalism. Thank you so much for all your hard work!!",
-        name: "Esther Aragon",
-        title: "Senior Client Project Manager"
-    },
-    {
-        quote: "Wonderful working with Cameron on this project. We always appreciate your quick turnarounds and professionalism. Thank you so much for all your hard work!!",
-        name: "Esther Aragon",
-        title: "Senior Client Project Manager"
-    },
-    {
-        quote: "Wonderful working with Cameron on this project. We always appreciate your quick turnarounds and professionalism. Thank you so much for all your hard work!!",
-        name: "Esther Aragon",
-        title: "Senior Client Project Manager"
-    },
-    {
-        quote: "Wonderful working with Cameron on this project. We always appreciate your quick turnarounds and professionalism. Thank you so much for all your hard work!!",
-        name: "Esther Aragon",
-        title: "Senior Client Project Manager"
-    },
-
-]
 
 export default function Testimonials() {
     const plugin = AutoScroll({
@@ -85,8 +49,6 @@ export default function Testimonials() {
                             </CarouselItem>
                         ))}
                     </CarouselContent>
-                    {/*<CarouselPrevious className="left-2" />*/}
-                    {/*<CarouselNext className="right-2" />*/}
                 </Carousel>
             </div>
         </section>

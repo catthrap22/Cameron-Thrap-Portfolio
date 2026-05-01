@@ -46,9 +46,11 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+
 }
 
 :root {
+  --theme-blue: #0C0E23;
   --background: oklch(1 0 0);
   --foreground: oklch(0.141 0.005 285.823);
   --card: oklch(1 0 0);
@@ -128,3 +130,25 @@
     @apply font-sans;
   }
 }
+
+/* app/globals.css */
+
+/*!* Track rows — the white pill look *!*/
+/*[data-slot="audio-track"] {*/
+/*  @apply bg-white rounded-full px-4 py-2 shadow-sm;*/
+/*}*/
+
+/*!* Play button inside each track *!*/
+/*[data-slot="audio-player-button"] {*/
+/*  @apply text-[#1a1b4b];  !* your dark navy icon color *!*/
+/*}*/
+
+/*!* Seek bar *!*/
+/*[data-slot="audio-seek-bar"] {*/
+/*  @apply accent-[#1a1b4b];*/
+/*}*/
+
+/*!* Active/playing track highlight *!*/
+/*[data-slot="audio-track"][data-current="true"] {*/
+/*  @apply ring-2 ring-[#1a1b4b]/30;*/
+/*}*/

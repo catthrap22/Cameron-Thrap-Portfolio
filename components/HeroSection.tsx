@@ -41,6 +41,7 @@ export default function HeroSection() {
                     Transparent Picture of Cameron Thrap holding a lightsaber.
                     He is wearing a blue shirt and has a slight smirk.
                 "
+                loading="eager"
                 width={1620}
                 height={2160}>
             </Image>
