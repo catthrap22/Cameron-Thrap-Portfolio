@@ -17,7 +17,7 @@ export default function Demos() {
                   <AudioPlayer src="/src/Demos/ELearningDemo.mp3" title="E-Learning Demo" />
                   <AudioPlayer src="/src/Demos/InteractiveAndVideoGamesCameronThrapDEMO" title="Interactive and Video Games Demo" />
               </div>
-              <div className="flex flex-row items-end p-8 ">
+              <div className="flex flex-row items-end p-8">
                   {/* TODO:// see how I can make this in line with the bottom of the button for the play bar*/}
                   <Image
                       src="/src/NingaTurtle.jpg"
@@ -25,6 +25,7 @@ export default function Demos() {
                       width={4284}
                       height={5712}
                       className="w-90 h-full pt-1 rounded-2xl mx-4"
+                      loading="eager"
                   />
               </div>
           </div>

@@ -1,52 +1,47 @@
+"use client"
+
+import * as React from "react"
+import { ChevronsUpDown } from "lucide-react"
+
+import { Button } from "@/components/ui/button"
 import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
-} from "@/components/ui/accordion"
+    Collapsible,
+    CollapsibleContent,
+    CollapsibleTrigger,
+} from "@/components/ui/collapsible"
 
+export default function CollapsibleDemo() {
+    const [isOpen, setIsOpen] = React.useState(false)
 
-const items = [
-    {
-        value: "billing",
-        trigger: "How does billing work?",
-        content:
-            "We offer monthly and annual subscription plans. Billing is charged at the beginning of each cycle, and you can cancel anytime. All plans include automatic backups, 24/7 support, and unlimited team members.",
-    },
-    {
-        value: "security",
-        trigger: "Is my data secure?",
-        content:
-            "Yes. We use end-to-end encryption, SOC 2 Type II compliance, and regular third-party security audits. All data is encrypted at rest and in transit using industry-standard protocols.",
-    },
-    {
-        value: "integration",
-        trigger: "What integrations do you support?",
-        content:
-            "We integrate with 500+ popular tools including Slack, Zapier, Salesforce, HubSpot, and more. You can also build custom integrations using our REST API and webhooks.",
-    },
-]
-
-export default function AccordionBorders() {
     return (
-        <section>
-        <Accordion
-            type="single"
-            collapsible
-            className="max-w-lg rounded-lg border"
-            defaultValue="billing"
+        <Collapsible
+            open={isOpen}
+            onOpenChange={setIsOpen}
+            className="flex w-[350px] flex-col gap-2"
         >
-            {items.map((item) => (
-                <AccordionItem
-                    key={item.value}
-                    value={item.value}
-                    className="border-b px-4 last:border-b-0"
-                >
-                    <AccordionTrigger>{item.trigger}</AccordionTrigger>
-                    <AccordionContent>{item.content}</AccordionContent>
-                </AccordionItem>
-            ))}
-        </Accordion>
-    </section>
+            <div className="flex items-center justify-between gap-4 px-4">
+                <h4 className="text-sm font-semibold">Order #4189</h4>
+                <CollapsibleTrigger asChild>
+                    <Button variant="ghost" size="icon" className="size-8">
+                        <ChevronsUpDown />
+                        <span className="sr-only">Toggle details</span>
+                    </Button>
+                </CollapsibleTrigger>
+            </div>
+            <div className="flex items-center justify-between rounded-md border px-4 py-2 text-sm">
+                <span className="text-muted-foreground">Status</span>
+                <span className="font-medium">Shipped</span>
+            </div>
+            <CollapsibleContent className="flex flex-col gap-2">
+                <div className="rounded-md border px-4 py-2 text-sm">
+                    <p className="font-medium">Shipping address</p>
+                    <p className="text-muted-foreground">100 Market St, San Francisco</p>
+                </div>
+                <div className="rounded-md border px-4 py-2 text-sm">
+                    <p className="font-medium">Items</p>
+                    <p className="text-muted-foreground">2x Studio Headphones</p>
+                </div>
+            </CollapsibleContent>
+        </Collapsible>
     )
 }
