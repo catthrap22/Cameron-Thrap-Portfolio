@@ -1,4 +1,5 @@
 import {Button} from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Footer() {
     return (
@@ -27,8 +28,10 @@ export default function Footer() {
           </div>
           <div className="flex flex-col items-center justify-center absolute z-10 space-y-[47px]">
               <h1 className="text-white text-6xl font-bold font-['Inter'] leading-16 [text-shadow:0px_8px_8px_rgb(0_0_0/0.25)]">level up your VO</h1>
-              <Button className="h-16 w-50 rounded-[20px] bg-white text-2xl font-bold text-indigo-950 font-inter hover:text-blue-400">
-                  Contact Me
+              <Button asChild className="h-16 w-50 rounded-[20px] bg-white text-2xl font-bold text-indigo-950 font-inter hover:text-blue-400">
+                  <Link href="mailto:themathnight@gmail.com">
+                      Contact Me
+                  </Link>
               </Button>
           </div>
       </section>
