@@ -57,7 +57,7 @@ export function AudioPlayer({src, title, className}: AudioPlayerProps) {
     }
 
     return (
-        <div className={cn("flex items-center gap-3 bg-muted rounded-full px-3 py-2.5 cursor-pointer", className)}>
+        <div className={cn("flex items-center gap-3 bg-muted rounded-full pl-3 py-2.5 pr-6 cursor-pointer", className)}>
             <audio ref={audioRef} src={src}/>
 
             <button
@@ -75,22 +75,26 @@ export function AudioPlayer({src, title, className}: AudioPlayerProps) {
                 <p className="text-sm font-semibold text-foreground truncate mb-1">
                     {title}
                 </p>
-                <div className="flex items-center gap-2">
-                    <span className="text-xs text-foreground font-medium tabular-nums">
-                        {current}
-                    </span>
+                <div className="flex items-center gap-2 ">
                     <div
-                        className="flex-1 h-1.5  bg-[#5CA1F6] rounded-full cursor-pointer"
+                        className="flex-1 h-2 bg-background border border-border rounded-full cursor-pointer"
                         onClick={seek}
                     >
                         <div
-                            className="h-full bg-[#0C0E23] rounded-full transition-all"
+                            // bg-indigo-700
+                            className="h-full bg-foreground rounded-full transition-all"
                             style={{width: `${progress}%`}}
                         />
                     </div>
+
+                </div>
+                <div className="flex items-center justify-between w-full pt-1">
+                        <span className="text-xs text-foreground font-medium tabular-nums">
+                            {current}
+                        </span>
                     <span className="text-xs text-foreground font-medium tabular-nums">
-                        {duration}
-                    </span>
+                            {duration}
+                        </span>
                 </div>
             </div>
         </div>)
