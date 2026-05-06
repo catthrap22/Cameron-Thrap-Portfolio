@@ -26,7 +26,7 @@ export const VideoGameDemo = {
 }
 
 
-export const items = [{
+export const PoliciesGridItems = [{
     id: 1,
     title: "Fast with Free corrections",
     description: "If you are in a rush, I am the guy for you! I will let you know as soon as possible if I am unavailable, so it doesn't become a problem. If I made a mistake, I will provide you with a new take free of charge. If you have new work or major revisions to the script that have been made, there will be an additional cost that we will decide upon.",
@@ -111,3 +111,34 @@ export const testimonials = [
         quote: "Cameron was great and delivered a high quality voice over within a tight time frame. I will definitely use him again!",
     },
 ]
+
+// Grid Data Items
+export const AboutMeItems = [
+    {
+        id: 1,
+        className: "lg:col-span-5 lg:row-span-4 md:col-span-3 md:row-span-4  hidden md:block ",
+        imgClassName: "w-full h-full object-cover",
+        img: "/src/ContactImage.jpg",
+    },
+    {
+        id: 3,
+        className: "lg:col-span-5 lg:row-span-2 md:col-span-3 md:row-span-2",
+        description: "As a kid, I loved watching shows, movies, and playing video games. (Who doesn’t) I would pretend I was in Star Wars at the playground, and dress up as Link, who knows how many times, even at school. My first dream job was to be a chef, which doesn’t really matter in this context, but my second desire was to create a video game. After nearly failing my high school coding class and realizing that it is not where my skills lie, I recognized another way that I could pursue this dream. \n",
+    },
+    {
+        id: 4,
+        className: "lg:col-span-5 lg:row-span-4 md:col-span-3 md:row-span-4 hidden md:block",
+        imgClassName: "w-full h-full object-cover ",
+        img: "/src/CameronHeadshot.png",
+    },
+    {
+        id: 2,
+        className: "lg:col-span-5 lg:row-span-2 md:col-span-3 md:row-span-2",
+        description: "My siblings had been in performances on stage before, but it wasn’t until junior year that my friends made me join the theatre and speech groups. I quickly grew to enjoy my mentors, peers, and the art of play. Fast forward a year to my senior year, and I was cast as the lead role. This, along with the release of two very inspirational games: Persona 5 and Fire Emblem 3 Houses, gave me the idea and passionate interest in Voice acting. I realized that this was the way I could live out my childhood dreams. \n",
+    },
+    {
+        id: 5,
+        className: "lg:col-span-10 lg:row-span-2 md:col-span-6 md:row-span-2 h-fit",
+        description: "VO brings so many new challenges, possibilities, and potential that I could never have had otherwise. So I’ve researched, taken classes, gone to college for Performing Arts, networked, and got gigs with lots of cool clients. I’ve met lots of incredible actors, coaches, and friends along the way who have helped shape who I am as a person and actor. Despite video games being my main interest, I bring the same amount of drive, energy, and professionalism to any type of Voice-over. So bring it on! Commercials, Audiobooks, E-learning, Animation, Promo, you name it. I’ve got you covered. \n",
+    },
+];

@@ -57,17 +57,17 @@ export function AudioPlayer({src, title, className}: AudioPlayerProps) {
     }
 
     return (
-        <div className={cn("flex items-center gap-3 bg-muted rounded-full pl-3 py-2.5 pr-6 cursor-pointer", className)}>
+        <div className={cn("flex items-center gap-3 bg-white border border-[#3637496E] rounded-full pl-3 py-2.5 pr-6 cursor-pointer", className)}>
             <audio ref={audioRef} src={src}/>
 
             <button
                 onClick={toggle}
-                className="w-13 h-13 rounded-full bg-background border border-border
+                className="w-13 h-13 rounded-full bg-[#6971A229] border border-[#6971A229]
                     flex items-center justify-center shrink-0 hover:bg-accent transition-colors"
             >
                 {playing ?
-                    <Pause className="w-6 h-6 fill-foreground stroke-none"/> :
-                    <Play className="w-6 h-6 fill-foreground stroke-none ml-0.5"/>
+                    <Pause className="w-6 h-6 fill-[#111050] stroke-none"/> :
+                    <Play className="w-6 h-6 fill-[#111050] stroke-none ml-0.5"/>
                 }
             </button>
 
@@ -77,12 +77,12 @@ export function AudioPlayer({src, title, className}: AudioPlayerProps) {
                 </p>
                 <div className="flex items-center gap-2 ">
                     <div
-                        className="flex-1 h-2 bg-background border border-border rounded-full cursor-pointer"
+                        className="flex-1 h-2 bg-[#6971A229] border border-[#6971A229] rounded-full cursor-pointer"
                         onClick={seek}
                     >
                         <div
                             // bg-indigo-700
-                            className="h-full bg-foreground rounded-full transition-all"
+                            className="h-full bg-[#111050] rounded-full transition-all"
                             style={{width: `${progress}%`}}
                         />
                     </div>

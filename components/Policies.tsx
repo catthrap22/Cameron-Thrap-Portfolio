@@ -1,4 +1,4 @@
-import {items} from "@/data";
+import {PoliciesGridItems} from "@/data";
 import {Accordion, AccordionContent, AccordionItem, AccordionTrigger,} from "@/components/ui/accordion"
 
 export default function Policies() {
@@ -11,18 +11,18 @@ export default function Policies() {
             <Accordion
                 type="single"
                 collapsible
-                className="md:w-1/2 sm:w-full rounded-lg border bg-white text-indigo-950 shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]"
+                className="sm:w-full lg:w-275 rounded-lg border bg-white text-indigo-950 shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]"
             >
-                {items.map((item) => (
+                {PoliciesGridItems.map((item) => (
                     <AccordionItem
                         key={item.id}
                         value={item.title}
                         className="border-b px-4 last:border-b-0"
                     >
                         <AccordionTrigger
-                            className="text-2xl font-bold font-inter leading-6">{item.title}
+                            className="text-2xl md:text-4xl p-6 font-bold font-inter leading-6">{item.title}
                         </AccordionTrigger>
-                        <AccordionContent className="h-fit">
+                        <AccordionContent className="h-fit px-3 text-xl font-inter">
                             {item.description}
                         </AccordionContent>
                     </AccordionItem>
