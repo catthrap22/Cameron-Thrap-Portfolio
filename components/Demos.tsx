@@ -13,9 +13,9 @@ export default function Demos() {
               <div className="space-y-8 w-150 mx-4 h-full">
                   <h1 className="text-white text-5xl font-bold font-['Inter'] leading-12">Demos</h1>
                   <AudioPlayer src="/src/Demos/CommercialCameronThrapDEMO.mp3" title="Comercial Demo" />
+                  <AudioPlayer src="/src/Demos/InteractiveAndVideoGamesCameronThrapDEMO.mp3" title="Interactive and Video Games Demo" />
                   <AudioPlayer src="/src/Demos/AudiobookDemo.mp3" title="Audiobook Demo" />
                   <AudioPlayer src="/src/Demos/ELearningDemo.mp3" title="E-Learning Demo" />
-                  <AudioPlayer src="/src/Demos/InteractiveAndVideoGamesCameronThrapDEMO.mp3" title="Interactive and Video Games Demo" />
               </div>
               <div className="flex flex-row items-end p-8">
                   {/* TODO:// see how I can make this in line with the bottom of the button for the play bar*/}
