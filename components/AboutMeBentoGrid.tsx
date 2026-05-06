@@ -38,7 +38,7 @@ export const BentoGridItem = (
 {
     return (
         <div
-            className={cn("row-span-1 relative overflow-hidden rounded-3xl group/bento justify-between flex flex-col space-y-4 bg-[#3739BA]", className)}
+            className={cn("row-span-1 relative overflow-hidden rounded-3xl group/bento justify-between flex flex-col space-y-4 ", className)}
         >
             <div className="w-full h-full absolute">
                 {img && (<img
