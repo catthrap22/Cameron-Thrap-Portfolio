@@ -20,7 +20,7 @@ export default function Testimonials() {
             id="testimonials"
             className="bg-[#030115]"
         >
-            <div className="rounded-3xl -mt-50 -mx-20 bg-white -rotate-4 px-12 py-20 space-x-2">
+            <div className="rounded-3xl -mt-60 -mx-20 bg-white sm:rotate-0 md:-rotate-4 px-12 py-20 space-x-2">
                 <Carousel
                     plugins={[plugin]}
                     opts={{
@@ -34,9 +34,9 @@ export default function Testimonials() {
                 >
                     <CarouselContent className="-ml-4">
                         {testimonials.map((testimonial, index) => (
-                            <CarouselItem key={index} className="p-4 basis-full md:basis-1/2 lg:basis-1/3">
+                            <CarouselItem key={index} className="p-4 basis-1/3">
                                 <div className="h-full">
-                                    <div className="w-full h-72 bg-indigo-700 rounded-[50px] border border-zinc-700/40 text-white p-8 flex flex-col justify-between">
+                                    <div className="w-full h-100 lg:h-95 bg-indigo-700 rounded-[50px] border border-zinc-700/40 text-white p-8 flex flex-col justify-between">
                                         <p className="text-xl font-normal leading-6">
                                             {testimonial.quote}
                                         </p>
