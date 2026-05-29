@@ -90,16 +90,21 @@ export const testimonials = [
         name: "Esther Aragon",
         quote: "Wonderful working with Cameron on this project. We always appreciate your quick turnarounds and professionalism. Thank you so much for all your hard work!!",
     },
-    {
-        title: "Animator",
-        name: "Berrybub",
-        quote: "I am so happy with the final result! It's an amazing feeling seeing your own characters come to life with VO and especially with such good quality voice acting. I would definitely come back for other animation projects. The delivery was very fast and the communication went very smoothly. Thank you again for your wonderful service!",
-    },
+    // {
+    //     title: "Animator",
+    //     name: "Berrybub",
+    //     quote: "I am so happy with the final result! It's an amazing feeling seeing your own characters come to life with VO and especially with such good quality voice acting. I would definitely come back for other animation projects. The delivery was very fast and the communication went very smoothly. Thank you again for your wonderful service!",
+    // },
     // {
     //     title: "Animator",
     //     name: "abridgegoku",
     //     quote: "Cameron always does a fantastic job and continues to impress me every time we work together… His turnaround time is incredibly fast without ever sacrificing quality, which consistently remains top-notch. The audio is always clean, professional, and delivered with real passion for the role. Beyond just his skill, Cameron is easy to communicate with and makes the entire process smooth and enjoyable. It’s always a genuine pleasure collaborating with him, and I look forward to continuing to work with him on future projects",
     // },
+    {
+        title: "Animator",
+        name: "abridgegoku",
+        quote: "Cameron always does a fantastic job and continues to impress me every time we work together… His turnaround time is incredibly fast without ever sacrificing quality, which consistently remains top-notch. The audio is always clean, professional, and delivered with real passion for the role.",
+    },
     {
         title: "Graphic Design",
         name: "Item productions",
