@@ -22,7 +22,7 @@ export const BentoGrid = (
 
 export const BentoGridItem = (
         {
-            className, title, description, img, imgClassName, titleClassName,
+            className, description, img, imgClassName, titleClassName,
         }: {
             className?: string;
             id: number;
