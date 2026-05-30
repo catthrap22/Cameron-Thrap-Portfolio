@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d627e6a1-1518-4ca6-90e4-edd5aba93f2a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/AboutMeBentoGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/AboutMeBentoGrid.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Policies.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Policies.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +116,7 @@
       <workItem from="1777915261792" duration="2089000" />
       <workItem from="1778025092502" duration="10216000" />
       <workItem from="1778722234390" duration="642000" />
-      <workItem from="1779939258494" duration="26904000" />
+      <workItem from="1779939258494" duration="27169000" />
     </task>
     <servers />
   </component>

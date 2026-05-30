@@ -5,7 +5,7 @@ export default function Policies() {
     return (
         <section
             id="policies"
-            className="bg-[#030115] w-full h-full flex flex-col items-center justify-center relative z-0 sm:p-8 md:p-0 "
+            className="bg-[#030115] w-full h-full flex flex-col items-center justify-center relative z-0 p-8"
         >
             <h1 className="pb-8 text-white text-6xl font-bold font-['Inter'] leading-16 [text-shadow:0px_8px_8px_rgb(0_0_0/0.25)]">Policies</h1>
             <Accordion
