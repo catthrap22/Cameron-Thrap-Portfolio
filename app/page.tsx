@@ -4,7 +4,6 @@ import AboutMe from "@/components/AboutMe";
 import Policies from "@/components/Policies";
 import HeroSection from "@/components/HeroSection";
 import Testimonials from "@/components/Testimonials";
-import Filler from "@/components/Filler";
 
 export default function Home() {
   return (
@@ -14,8 +13,7 @@ export default function Home() {
         <Demos/>
         <AboutMe/>
         <Policies/>
-        <Filler/>
-        {/*<Footer/>*/}
+        <Footer/>
     </div>
   );
 }

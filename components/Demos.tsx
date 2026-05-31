@@ -11,7 +11,7 @@ export default function Demos() {
         >
             <div className="flex flex-row justify-center items-stretch mx-8 my-16 lg:my-32 w-full lg:w-5/8 h-fit gap-8">
               <div className="space-y-8 w-full md:w-2/3 lg:w-1/2 flex flex-col justify-center">
-                  <h1 className="text-white text-5xl font-bold font-['Inter'] leading-12">Demos</h1>
+                  <h1 className="text-white text-5xl text-center sm:text-start font-bold font-['Inter'] leading-12">Demos</h1>
                   <AudioPlayer src="/src/Demos/CommercialCameronThrapDEMO.mp3" title="Comercial Demo" />
                   <AudioPlayer src="/src/Demos/InteractiveAndVideoGamesCameronThrapDEMO.mp3" title="Interactive and Video Games Demo" />
                   <AudioPlayer src="/src/Demos/AudiobookDemo.mp3" title="Audiobook Demo" />

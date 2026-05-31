@@ -1,7 +1,9 @@
 import {Button} from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HeroSection() {
+
     return (
         <section
             id="home"
@@ -22,18 +24,33 @@ export default function HeroSection() {
                 "
         >
             {/* this is the text blob on the right side of the page. */}
-            <div className="flex flex-col flex-1 items-center md:items-start">
-                <div className="text-white text-4xl lg:text-6xl font-bold font-['Inter'] leading-16 text-nowrap">Cameron Thrap</div>
-                <div className="text-blue-400 text-xl font-bold font-['Inter'] pb-3 leading-6">Voice Actor</div>
-                <div className="text-white text-xl font-bold font-['Inter'] leading-6 text-nowrap">Respectably, caring, and efficiently</div>
-                <div className="text-white text-xl font-bold font-['Inter'] leading-6 pb-3">creating art and entertainment </div>
-                <div className="space-x-2 py-2 flex flex-row">
-                    <Button className="h-16 w-40 rounded-[20px] bg-white text-2xl font-bold text-indigo-950 font-inter hover:text-blue-400">
-                        Contact
-                    </Button>
-                    <Button className="h-16 w-40 rounded-[20px] bg-white text-2xl font-bold text-indigo-950 font-inter hover:text-blue-400">
-                        Demos
-                    </Button>
+            <div className="flex flex-col flex-1 items-center md:items-start lg:space-y-7">
+                <div
+                    className="text-white text-4xl lg:text-[84px] font-bold font-['Inter'] leading-16 text-nowrap">Cameron
+                    Thrap
+                </div>
+                <div className="text-blue-400 text-xl lg:text-4xl font-bold font-['Inter'] pb-3 leading-6">Voice Actor
+                </div>
+                <div
+                    className="text-white text-xl lg:text-4xl font-bold font-['Inter'] leading-6 text-nowrap">Respectably,
+                    caring, and efficiently
+                </div>
+                <div className="text-white text-xl lg:text-4xl font-bold font-['Inter'] leading-6 pb-3">creating art and
+                    entertainment
+                </div>
+                <div className="space-x-2 py-2 lg:py-0 flex flex-row">
+                    <Link href="/#contact" style={{textDecoration: 'none'}}>
+                        <Button
+                            className="lg:h-16 lg:w-40 rounded-[20px] h-14 w-30 bg-white md:text-2xl text-xl font-bold text-indigo-950 font-inter hover:text-blue-400">
+                            Contact
+                        </Button>
+                    </Link>
+                    <Link href="/#demos" style={{textDecoration: 'none'}}>
+                        <Button
+                            className="lg:h-16 lg:w-40 rounded-[20px] h-14 w-30 bg-white md:text-2xl text-xl font-bold text-indigo-950 font-inter hover:text-blue-400">
+                            Demos
+                        </Button>
+                    </Link>
                 </div>
             </div>
 

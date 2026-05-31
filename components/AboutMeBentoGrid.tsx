@@ -38,22 +38,21 @@ export const BentoGridItem = (
 {
     return (
         <div
-            className={cn("row-span-1 relative overflow-hidden rounded-3xl group/bento justify-between flex flex-col space-y-4 ", className)}
+            className={cn("row-span-1 relative overflow-hidden group/bento justify-between flex flex-col space-y-4 ", className)}
         >
             <div className="w-full h-full absolute">
                 {img && (<img
                         src={img}
                         alt={img}
-                        className={cn(imgClassName, "object-cover object-center ")}
+                        className={cn(imgClassName, "object-cover object-center rounded-3xl")}
                     />)}
             </div>
             <div
-                className={cn(titleClassName, "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-10 flex flex-col p-5 lg:p-10")}
+                className={cn(titleClassName, "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-10 flex flex-col")}
             >
-                <div className="font-inter md:text-xs lg:text-base font-bold text-white z-10 text-xl font-inter md:text-start
+                <div className="font-inter text-xl lg:text-2xl font-bold text-white z-10 font-inter md:text-base
                  {/*text-center*/}
                  ">
-
                     {description}
                 </div>
 
