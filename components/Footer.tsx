@@ -33,7 +33,7 @@ export default function Footer() {
           <div className="flex flex-col items-center justify-center space-y-12 bg-[linear-gradient(235.86deg,rgb(0,0,7)_15.356%,rgb(17,16,80)_54.565%,rgb(55,57,186)_87.89%)] w-full h-1/2 lg:w-3/4 lg:h-[467px] rounded-[50px] p-8 md:p-16 mx-2 mb-16 lg:my-32">
               <h1 className="text-white md:text-6xl font-bold font-['Inter'] text-center leading-16 [text-shadow:0px_8px_8px_rgb(0_0_0/0.25)] text-balance text-4xl ">level up your <span className="text-blue-400">VO</span></h1>
               <Button asChild className="h-16 w-50 rounded-[20px] bg-white text-2xl font-bold text-indigo-950 font-inter hover:text-blue-400">
-                  <Link href="mailto:themathnight@gmail.com">
+                  <Link href="mailto:catthrap@gmail.com">
                       Contact Me
                   </Link>
               </Button>
