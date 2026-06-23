@@ -1,5 +1,5 @@
 import Demos from "@/components/Demos";
-import Footer from "@/components/Footer.alt.2";
+import Footer from "../components/Footer";
 import AboutMe from "@/components/AboutMe";
 import Policies from "@/components/Policies";
 import HeroSection from "@/components/HeroSection";

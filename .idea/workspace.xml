@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d627e6a1-1518-4ca6-90e4-edd5aba93f2a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/Footer.alt.2.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Footer.alt.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/src/CameronAdgencyLogo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/AudioPlayer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/AudioPlayer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Footer.alt.2.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Footer.alt.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/footer.old.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/text.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +119,7 @@
       <workItem from="1781752867771" duration="2165000" />
       <workItem from="1781966479112" duration="3731000" />
       <workItem from="1782142525255" duration="3000" />
-      <workItem from="1782142551035" duration="10911000" />
+      <workItem from="1782142551035" duration="11085000" />
     </task>
     <servers />
   </component>
