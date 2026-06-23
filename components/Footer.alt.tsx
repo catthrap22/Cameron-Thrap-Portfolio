@@ -1,10 +1,9 @@
-
-
 import Link from "next/link";
 import {Copyright} from "lucide-react";
 import {Button} from "@/components/ui/button";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faImdb, faInstagram, faFacebook} from "@fortawesome/free-brands-svg-icons";
+import {faCopy} from "@fortawesome/free-solid-svg-icons";
 import {IconDefinition} from "@fortawesome/fontawesome-svg-core";
 import Image from "next/image";
 
@@ -40,30 +39,14 @@ export default function Footer() {
                     up your <span className="text-blue-400">VO</span></h1>
                 {/*  TODO:// add the contact center here for the agency*/}
                 <div className="flex flex-row justify-center items-center space-x-4">
-                    <div>
-                        {/* agency logo on the left side of the divider*/}
-                        <Image src="/src/CameronAdgencyLogo.png" alt="Coast to Coast Talent Group Logo" width={264} height={148}/>
-                    </div>
-                    <div>
-                        {/*    here is where we will add a spot for the divider that will seperate them. */}
-
-                    </div>
                     <div className="font-inter text-xl lg:text-2xl font-bold text-white z-10 font-inter md:text-base
                  {/*text-center*/} space-y-4">
-                        {/*    here is the address for the agency and here is were we want to add a button as well that copies the adress so they can look it up*/}
-                        <div>
-                            <p>Coast To Coast Talent Group</p>
-                            <p>Director of Voiceover</p>
-                            <p>3350 Barham Blvd. </p>
-                            <p>Los Angeles, CA 90068</p>
-                        </div>
-
                         {/* Button Group */}
                         <div className="space-x-2">
                             <Button asChild
-                                    className="h-16 w-50 rounded-[20px] bg-white text-2xl font-bold text-indigo-950 font-inter hover:text-blue-400">
+                                    className="h-16 w-fit rounded-[20px] bg-white text-2xl font-bold text-indigo-950 font-inter hover:text-blue-400">
                                 <Link href="mailto:catthrap@gmail.com">
-                                    Copy Address
+                                    Copy Agency Address
                                 </Link>
                             </Button>
                             <Button asChild

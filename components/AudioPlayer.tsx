@@ -27,17 +27,14 @@ export function AudioPlayer({src, title, className}: AudioPlayerProps) {
             setCurrent(fmt(a.currentTime))
             setProgress((a.currentTime / a.duration) * 100 || 0)
         }
-        const onLoad = () => setDuration(fmt(a.duration))
         const onEnd = () => {
             setPlaying(false);
             setProgress(0)
         }
         a.addEventListener("timeupdate", onTime)
-        a.addEventListener("loadedmetadata", onLoad)
         a.addEventListener("ended", onEnd)
         return () => {
             a.removeEventListener("timeupdate", onTime)
-            a.removeEventListener("loadedmetadata", onLoad)
             a.removeEventListener("ended", onEnd)
         }
     }, [])
